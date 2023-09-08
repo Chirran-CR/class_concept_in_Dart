@@ -14,7 +14,10 @@ class Car extends Vehicle{
   // final int noOfWheel;
   // const Car(this.noOfWheel) : super(noOfWheel);
   //-----------------------------------------------------
-  Car(super.wheelCount);//can't be const, becz speed is a non-final variable
+  // Car(super.wheelCount);//can't be const, becz speed is a non-final variable
+  Car(super.wheelCount){
+    print("this is constructor");
+  }
 
   int _speed =0;
 
@@ -57,4 +60,28 @@ void main(){
   print("speed is: ${obj1.speedGeter}");
   // Motor obj2 = Motor(5);
   // obj2.check();
+  // myFn("dd");
+  myFn(val:"dd");
+  myFn2("dd2");
+  myFn3(val: "dd3");
+
+}
+
+//named Parameter
+// void myFn(String val){
+void myFn({String? val}){
+
+  print("val is $val");
+}
+
+//required parameter but not named
+void myFn2(String val){
+
+  print("val is $val");
+}
+
+//required named parameter
+void myFn3({required String val}){
+
+  print("val is $val");
 }
