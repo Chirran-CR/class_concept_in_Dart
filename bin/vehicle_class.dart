@@ -63,9 +63,14 @@ void main(){
   // myFn("dd");
   myFn(val:"dd");
   myFn2("dd2");
+  myFn2(null);
   myFn3(val: "dd3");
 
 }
+
+///  2 types of parameter in function:
+/// i) Positioned Parameter => void myFun(String val1, String val2) {}
+/// ii) Named Parameter => void myFun({String val1, String val2}) {}
 
 //named Parameter
 // void myFn(String val){
@@ -74,14 +79,20 @@ void myFn({String? val}){
   print("val is $val");
 }
 
-//required parameter but not named
-void myFn2(String val){
+//required parameter but not named => Positional Parameter, positional parameter can't have the 
+//default value
+void myFn2(String? val){
 
   print("val is $val");
 }
 
 //required named parameter
 void myFn3({required String val}){
+
+  print("val is $val");
+}
+
+void myFn4([String? val]){
 
   print("val is $val");
 }
