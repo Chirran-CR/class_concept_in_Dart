@@ -71,7 +71,6 @@ void main(){
 ///  2 types of parameter in function:
 /// i) Positioned Parameter => void myFun(String val1, String val2) {}
 /// ii) Named Parameter => void myFun({String val1, String val2}) {}
-/// To write postional parameter, need to write every parameter in order
 
 //named Parameter
 // void myFn(String val){
