@@ -19,7 +19,7 @@ class Car extends Vehicle{
     print("this is constructor");
   }
 
-  int _speed =0;
+  int _speed =0;//private variable
 
   //getter
   int get speedGeter=> _speed + 1;
